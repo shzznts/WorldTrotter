@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4047B5861CAAC78A00A536D9 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4047B5851CAAC78A00A536D9 /* ConversionViewController.swift */; };
 		409DF6861CA978E800053D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DF6851CA978E800053D78 /* AppDelegate.swift */; };
-		409DF6881CA978E800053D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DF6871CA978E800053D78 /* ViewController.swift */; };
 		409DF68B1CA978E800053D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409DF6891CA978E800053D78 /* Main.storyboard */; };
 		409DF68D1CA978E800053D78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409DF68C1CA978E800053D78 /* Images.xcassets */; };
 		409DF6901CA978E800053D78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409DF68E1CA978E800053D78 /* LaunchScreen.xib */; };
 		409DF69C1CA978E800053D78 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409DF69B1CA978E800053D78 /* WorldTrotterTests.swift */; };
+		40AB249B1CAC9FA900703D8D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40AB249A1CAC9FA900703D8D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4047B5851CAAC78A00A536D9 /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversionViewController.swift; path = ../ConversionViewController.swift; sourceTree = "<group>"; };
 		409DF6801CA978E800053D78 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409DF6841CA978E800053D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		409DF6851CA978E800053D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		409DF6871CA978E800053D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		409DF68A1CA978E800053D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		409DF68C1CA978E800053D78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		409DF68F1CA978E800053D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		409DF6951CA978E800053D78 /* WorldTrotterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		409DF69A1CA978E800053D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		409DF69B1CA978E800053D78 /* WorldTrotterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterTests.swift; sourceTree = "<group>"; };
+		40AB249A1CAC9FA900703D8D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40AB249B1CAC9FA900703D8D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		409DF6771CA978E800053D78 = {
 			isa = PBXGroup;
 			children = (
+				40AB249A1CAC9FA900703D8D /* MapKit.framework */,
 				409DF6821CA978E800053D78 /* WorldTrotter */,
 				409DF6981CA978E800053D78 /* WorldTrotterTests */,
 				409DF6811CA978E800053D78 /* Products */,
@@ -77,8 +81,8 @@
 		409DF6821CA978E800053D78 /* WorldTrotter */ = {
 			isa = PBXGroup;
 			children = (
+				4047B5851CAAC78A00A536D9 /* ConversionViewController.swift */,
 				409DF6851CA978E800053D78 /* AppDelegate.swift */,
-				409DF6871CA978E800053D78 /* ViewController.swift */,
 				409DF6891CA978E800053D78 /* Main.storyboard */,
 				409DF68C1CA978E800053D78 /* Images.xcassets */,
 				409DF68E1CA978E800053D78 /* LaunchScreen.xib */,
@@ -156,6 +160,7 @@
 		409DF6781CA978E800053D78 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Lincoln Sea";
 				TargetAttributes = {
@@ -212,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409DF6881CA978E800053D78 /* ViewController.swift in Sources */,
+				4047B5861CAAC78A00A536D9 /* ConversionViewController.swift in Sources */,
 				409DF6861CA978E800053D78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +414,7 @@
 				409DF6A11CA978E800053D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		409DF6A21CA978E800053D78 /* Build configuration list for PBXNativeTarget "WorldTrotterTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +423,7 @@
 				409DF6A41CA978E800053D78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
