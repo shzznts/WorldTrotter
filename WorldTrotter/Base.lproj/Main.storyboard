@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5kA-RE-xIM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5kA-RE-xIM">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Convert-->
@@ -88,7 +87,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="381" y="414"/>
+            <point key="canvasLocation" x="1060" y="-282"/>
         </scene>
         <!--Map-->
         <scene sceneID="NR5-Bg-FkG">
@@ -100,6 +99,16 @@
             </objects>
             <point key="canvasLocation" x="1872" y="414"/>
         </scene>
+        <!--WEb-->
+        <scene sceneID="P8D-P7-BdJ">
+            <objects>
+                <viewController id="9eh-o8-7ZZ" customClass="WebViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="WEb" image="BookingIcon" id="rw5-t2-oAU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA7-ba-5Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="1122"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DY6-QO-TPW">
             <objects>
@@ -110,8 +119,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="14T-Zw-5dr"/>
                         <segue destination="Liv-Sj-ufj" kind="relationship" relationship="viewControllers" id="hC6-YR-jJh"/>
+                        <segue destination="9eh-o8-7ZZ" kind="relationship" relationship="viewControllers" id="Xcp-ms-vMw"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="14T-Zw-5dr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zl7-KS-zTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,6 +130,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BookingIcon" width="33" height="33"/>
         <image name="ConvertIcon" width="49" height="33"/>
         <image name="MapIcon" width="49" height="33"/>
     </resources>
